@@ -1,5 +1,5 @@
 # LOOKSMAXXING PORTFOLIO SITE
-*This is a project i worked on to understand and improve my skills in web designing and web development. it is a fully functional website for free articles on improving the overall appearance of a person and making oneself presentable.
+* This is a project i worked on to understand and improve my skills in web designing and web development. it is a fully functional website for free articles on improving the overall appearance of a person and making oneself presentable.
 ## KEY FEATUERS
 * it has completely functioning links and navigation button with smooth hovering mechanism when the cursor is gliding through the buttons.
 * It is fully compatible and functional for both a desktop or a smartphone screen changing it's layout accordingly for better aesthetics and easy functionality.
