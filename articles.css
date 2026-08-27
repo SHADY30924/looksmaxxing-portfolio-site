@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1F4D5C;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 3rem;
+    margin-top: 20px;
+    color: #D8CCB4;
+
+}
+
+/* Articles Grid */
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Article Cards */
+.article-card {
+    background: linear-gradient(to right, #D8CCB4, #c9ae81);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #19404d;
+}
+
+.article-card img {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    margin-bottom: 0px; /* Space between image and text */
+    margin-top: 0px;   /* Space between image and top*/
+    margin-right: 10px;
+}
+
+.article-card h2 {
+    font-size: 1.5;
+    margin: 10px 15px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.article-card p {
+    font-size: 1rem;
+    margin: 0 15px 15px;
+    color: #666;
+    text-align: left;
+    line-height: 22px;
+}
+
+/* Hover Effect */
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styled header similar to Home Page */
+.gradient-header {
+    background: #D8CCB4;
+    text-align: center;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+    color: #1F4D5C;
+    font-size: 1.8em;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .articles-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        gap: 30px; /* Increase gap between articles */
+        padding: 12px; /* Add some padding around */
+    }
+
+    .article-card {
+        padding: 10px; /* Increase padding inside cards */
+    }
+}
+
+/*Logo*/
+.home-page.site-logo {
+    position: relative;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: auto;
+}
+
+
+
+/* for thr article page /*
+
+/* General Styling */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+/* Container for the Article */
+.article-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #19404d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Article Title */
+h1 {
+
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+h2{
+    text-align: left;
+}
+h3{
+    text-align: left;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.glowup-visual {
+    width: 80%;
+    height: auto;
+    max-width: 500px;
+    margin: 2rem auto;
+    display: block;
+    border: 2px solid #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  }
+  
+
+/* Paragraph Styling */
+p {
+    font-size: 18px;
+    text-align: left;
+    margin: 10px 20px;
+}
+
+.paragraph{
+    text-align: left;
+}
+
+li {
+    font-size: 16px;
+    padding-left: 1px;
+    margin-left: 0;
+  }
+
+ul {
+font-size: 16px;
+padding-left: 1.5rem;
+margin-left: 0;
+}
+  
+/*Internal links*/
+.internal-links a{
+    color: #cbae7b;
+    font-style: italic;
+
+}
+.internal-links ul{
+    list-style-type: disc;
+}
+
+/* Back to Articles Link */
+.back-to-articles {
+    margin-top: 20px;
+}
+
+.back-to-articles a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #19404d;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background:  linear-gradient(to right, #D8CCB4, #C2A97F);
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.back-to-articles a:hover {
+    text-decoration: underline;
+}
+
+
+/* Change menu button color only on article pages */
+.article-page .menu-toggle {
+    color:  #C2A97F!important;
+    margin-top: 6px;
+}
+
+/* Move menu button down only on home & articles list page */
+.home-page .menu-toggle,
+.articles-list-page .menu-toggle {
+    margin-top: 6px !important; /* Adjust as needed */
+}
+
+footer {
+    background:linear-gradient(to bottom, #1F4D5C, #15414d); 
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    padding-top: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #cbae7b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-logo {
+    width: 50px; /* Adjust size */
+    margin: 15px auto;
+    display: block;
+}
+
+.brand-name {
+    color:  #e5bc76; /* Adjust color */
+}
+
+.articles-list-page{
+    text-align: left;
+}
